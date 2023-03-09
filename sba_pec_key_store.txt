@@ -1,0 +1,5 @@
+Path: D:\Zaroon's Personal\Practice Projects\sba_pec_key_store_2023.jks
+Password: sba_pec_2023_jks
+Alias: key0
+Password: sba_pec_2023_jks
+First & Last Name: SBA PEC
