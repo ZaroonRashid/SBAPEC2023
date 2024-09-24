@@ -19,6 +19,7 @@ val SCREEN_KEY = "screen"
 val SCANNER_KEY = "scanner"
 val WEB_KEY = "webUrl"
 val WEBVIEW_KEY = "webview"
+
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityHomeBinding
@@ -38,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
 
         mBinding.tvHelpline.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:042–99260156")
+            intent.data = Uri.parse("tel:" + getString(R.string.helpline))
             startActivity(intent)
         }
         mBinding.tvWhatsapp.setOnClickListener {
@@ -46,11 +47,11 @@ class HomeActivity : AppCompatActivity() {
             if (installed) {
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data =
-                    Uri.parse("http://api.whatsapp.com/send?phone=03334045115")
+                    Uri.parse("http://api.whatsapp.com/send?phone=" + getString(R.string.whatsapp))
                 startActivity(intent)
             } else {
                 val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:0333-4045115")
+                intent.data = Uri.parse("tel:" + getString(R.string.whatsapp))
                 startActivity(intent)
             }
         }
@@ -85,7 +86,11 @@ class HomeActivity : AppCompatActivity() {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 openScannerActivityForResult()
             } else {
-                Toast.makeText(applicationContext, getString(R.string.permission_denied), Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    applicationContext,
+                    getString(R.string.permission_denied),
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
@@ -102,7 +107,7 @@ class HomeActivity : AppCompatActivity() {
                 // There are no request codes
                 val data: Intent? = result.data
                 val webUrl = data?.getStringExtra(WEB_KEY)
-                showAlertDialog(webUrl)
+                showAlertDialog(getString(R.string.base_url) + webUrl)
             }
         }
 
