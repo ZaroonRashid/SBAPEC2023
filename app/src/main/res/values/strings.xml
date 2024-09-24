@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">SBA PEC 2023</string>
+    <string name="app_name">RMS Scanner</string>
     <string name="sign_in">Sign in</string>
     <string name="tap_to_scan">Tap below to scan</string>
-    <string name="pec_qr_scanner">PEC SBA 2023 QR Scanner</string>
-    <string name="pec_sba_qr_scanner">PEC SBA QR Scanner</string>
-    <string name="developed_by">Developed by: PEC IT TEAM</string>
-    <string name="helpline">042–99260156</string>
-    <string name="whatsapp">0333–4045115</string>
+    <string name="rms_qr_scanner">RMS Scanner</string>
+    <string name="pec_sba_qr_scanner">RMS QR Scanner</string>
+    <string name="developed_by">Developed by DWS</string>
+    <string name="helpline">042–xxxxxxxx</string>
+    <string name="whatsapp">03xx–xxxxxxx</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
 
@@ -19,4 +19,6 @@
     <string name="no">No</string>
     <string name="demo_url">https://www.google.com</string>
     <string name="invalid_email_address">Email address is invalid</string>
+
+    <string name="base_url">https://rms.cph2020.com/product_db/find/</string>
 </resources>
