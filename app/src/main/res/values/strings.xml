@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">SBA PEC 2023</string>
+    <string name="app_name">SBA PEC 2025</string>
     <string name="sign_in">Sign in</string>
     <string name="tap_to_scan">Tap below to scan</string>
-    <string name="pec_qr_scanner">PEC SBA 2023 QR Scanner</string>
+    <string name="pec_qr_scanner">PEC SBA 2025 QR Scanner</string>
     <string name="pec_sba_qr_scanner">PEC SBA QR Scanner</string>
-    <string name="developed_by">Developed by: PEC IT TEAM</string>
+    <string name="developed_by">Developed by Rafiq-IT</string>
     <string name="helpline">042–99260156</string>
     <string name="whatsapp">0333–4045115</string>
     <string name="email">Email</string>
