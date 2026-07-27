@@ -15,7 +15,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/pec_logo"
+        android:src="@drawable/pectaa_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_home" />
@@ -90,7 +90,7 @@
             android:id="@+id/tv_helpline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/helpline"
+            android:text="@string/mobile"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"

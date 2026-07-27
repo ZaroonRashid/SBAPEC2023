@@ -38,7 +38,7 @@ class HomeActivity : AppCompatActivity() {
 
         mBinding.tvHelpline.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:042–99260156")
+            intent.data = Uri.parse("tel:0320–4032668")
             startActivity(intent)
         }
         mBinding.tvWhatsapp.setOnClickListener {
